@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="stylesheet" href="cal.css">
+</head>
+<body>
+    <header>
+        <h1>CASIO</h1>
+    </header>
+    <main>
+        <div class="cal">
+            <table cellspacing="13">
+                <tr>
+                    <td colspan="4"><input type="text" id="g"></input></td> 
+                </tr>
+                <tr>
+                    <td colspan="2"><input type="button" value="c" onclick="clr()" id="clear"></input></td>
+                    <td><input type="button" value="/" onclick="see('/')"></td>
+                    <td><input type="button" value="*" onclick="see('*')"></td>
+                </tr>
+                <tr> 
+                       <td><input type="button" value="1" onclick="see('1')"></td>
+                    <td><input type="button" value="2" onclick="see('2')"></td>
+                    <td><input type="button" value="3" onclick="see('3')"></td>
+                    <td><input type="button" value="-" onclick="see('-')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="4" onclick="see('4')"></td>
+                    <td><input type="button" value="5" onclick="see('5')"></td>
+                    <td><input type="button" value="6" onclick="see('6')"></td>
+                    <td rowspan="2"><input type="button" value="+" onclick="see('+')" id="pluse"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="7" onclick="see('7')"></td>
+                    <td><input type="button" value="8" onclick="see('8')"></td>
+                    <td><input type="button" value="9" onclick="see('9')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="." onclick="see('.')"></td>
+                    <td><input type="button" value="0" onclick="see('0')"></td>
+                    <td><input type="button" value="00" onclick="see('00')"></td>
+                    <td><input type="button" value="=" onclick="calc()" id="cal"></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="jsc.js"> </script>
+</body>
+</html>
